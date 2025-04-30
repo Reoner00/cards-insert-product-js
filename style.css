@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monsterrat";
+}
+
+@font-face {
+  font-family: "Monsterrat";
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+header {
+  display: flex;
+  padding: 1.5rem 2em;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav ul {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.3rem;
+      font-weight: 600;
+      transition: 0.2s ease-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.header-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#cardWrapper {
+  width: 100%;
+  padding: 1.5rem 2em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  width: 70%;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all ease-in-out 0.2s;
+}
