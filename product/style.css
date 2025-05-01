@@ -70,3 +70,13 @@ main h1 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+#saleLocationUrl {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.sellLocationText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}

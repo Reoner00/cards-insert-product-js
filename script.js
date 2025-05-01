@@ -3,6 +3,7 @@ import { fetchProducts } from "./utils/fetch.js";
 const cardWrapper = document.getElementById("cardWrapper");
 
 const buildCard = (data) => {
+  data.sort((a, b) => Number(a.price) - Number(b.price));
   data.forEach((product) => {
     const card = document.createElement("a");
 

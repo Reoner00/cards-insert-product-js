@@ -14,7 +14,7 @@ productForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const data = {
-    title: productName.value,
+    productName: productName.value,
     description: productDescription.value,
     price: productPrice.value,
     saleLocation: productSaleLocation.value,

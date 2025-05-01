@@ -2,7 +2,7 @@ export const validateInsert = (data, message) => {
   let isError = false;
 
   if (
-    !data.title ||
+    !data.productName ||
     !data.description ||
     !data.price ||
     !data.saleLocation ||
@@ -15,7 +15,7 @@ export const validateInsert = (data, message) => {
     isError = true;
   }
 
-  if (data.title && data.title.length < 3) {
+  if (data.productName && data.productName.length < 3) {
     if (message) {
       message.textContent = "Title must be at least 3 characters long.";
       message.style.color = "red";
