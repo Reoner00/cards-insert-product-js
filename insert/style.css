@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monsterrat";
+}
+
+@font-face {
+  font-family: "Monsterrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+header {
+  display: flex;
+  padding: 1.5rem 2em;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav ul {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.3rem;
+      font-weight: 600;
+      transition: 0.2s ease-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.header-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#cardWrapper {
+  width: 100%;
+  padding: 1.5rem 2em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  width: 70%;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all ease-in-out 0.2s;
+}
+
+.product-form {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  gap: 1.2rem;
+  input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    font-size: 1.2rem;
+    &:focus {
+      outline: none;
+      border: 3px solid #7e7e7e;
+    }
+  }
+  #btnSubmit {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.01);
+    }
+  }
+}
+
+#btnArrowBack {
+  position: fixed;
+  top: 50%;
+  left: 5rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    background-color: rgb(217, 217, 217);
+
+    .arrow-white {
+      display: none;
+    }
+  }
+
+  .arrow-white {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+  .arrow-black {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+  }
+  &:hover .arrow-black {
+    display: block;
+  }
+}
+
+#description {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 3px solid black;
+  font-size: 1.2rem;
+  position: static;
+  resize: none;
+  &:focus {
+    outline: none;
+    border: 3px solid #7e7e7e;
+  }
+}
