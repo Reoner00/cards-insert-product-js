@@ -9,12 +9,18 @@ const productDescription = document.getElementById("description");
 const productPrice = document.getElementById("price");
 const btnDelete = document.getElementById("btnDelete");
 const message = document.getElementById("message");
+const googleMap = document.getElementById("googleMap");
 
 const insertDataScreen = async (product) => {
   productName.textContent = product.productName;
   imgUrl.src = product.imgUrl;
   productDescription.textContent = product.description;
   productPrice.textContent = `$${product.price}`;
+  if (product.saleLocation) {
+    googleMap.src = product.saleLocation;
+  } else {
+    googleMap.src = "";
+  }
 };
 
 const buildScreen = async () => {

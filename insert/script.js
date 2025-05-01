@@ -4,7 +4,7 @@ import { validateInsert } from "../utils/validation.js";
 const productName = document.getElementById("productName");
 const productDescription = document.getElementById("description");
 const productPrice = document.getElementById("price");
-const productSaleLocation = document.getElementById("saleLocation");
+const productSaleLocation = document.getElementById("saleLocationUrl");
 const productImageUrl = document.getElementById("imgUrl");
 const productForm = document.getElementById("productForm");
 const message = document.getElementById("message");

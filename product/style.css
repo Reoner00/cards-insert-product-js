@@ -33,11 +33,12 @@ main h1 {
 }
 
 .card {
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(212, 194, 208);
-  width: 50%;
+  width: 20%;
   margin: 1rem auto;
   padding: 1.5rem 1.2rem;
   border-radius: 10px;

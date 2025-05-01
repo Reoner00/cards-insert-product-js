@@ -42,6 +42,15 @@ export const validateInsert = (data, message) => {
   const imageUrlRegex =
     /^https?:\/\/.*\.(jpg|jpeg|png|gif|bmp|webp|svg)(\?.*)?$/i;
 
+  const googleMapsEmbedRegex = /^https:\/\/www\.google\.com\/maps\/embed/;
+  if (data.saleLocation && !googleMapsEmbedRegex.test(data.saleLocation)) {
+    if (message) {
+      message.textContent = "Sale location must be a valid Google Maps link.";
+      message.style.color = "red";
+    }
+    isError = true;
+  }
+
   if (data.imgUrl && !imageUrlRegex.test(data.imgUrl)) {
     if (message) {
       message.textContent = "Image URL is invalid.";

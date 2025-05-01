@@ -9,18 +9,17 @@ const buildCard = (data) => {
     card.href = `./product/index.html?id=${product.id}`;
     card.classList.add("card");
 
-    const title = document.createElement("h3");
-    title.textContent = product.productName;
+    const productName = document.createElement("h3");
+    productName.textContent = product.productName;
 
     const imgUrl = document.createElement("img");
     imgUrl.src = product.imgUrl;
 
     const price = document.createElement("p");
-
     price.classList.add("price");
     price.textContent = `$${product.price}`;
 
-    card.append(title, imgUrl, price);
+    card.append(productName, imgUrl, price);
     cardWrapper.append(card);
     console.log("Creating card", product);
   });

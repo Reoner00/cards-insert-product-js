@@ -66,18 +66,9 @@ main h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.card {
-  width: 70%;
-  height: 400px;
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all ease-in-out 0.2s;
-}
-
 .product-form {
   margin: auto;
+  min-width: 500px;
   display: grid;
   grid-template-columns: 1fr;
   width: 50%;
