@@ -10,6 +10,7 @@ const productPrice = document.getElementById("price");
 const btnDelete = document.getElementById("btnDelete");
 const message = document.getElementById("message");
 const googleMap = document.getElementById("googleMap");
+const btnArrow = document.getElementById("btnArrowBack");
 
 const insertDataScreen = async (product) => {
   productName.textContent = product.productName;
@@ -42,4 +43,8 @@ btnDelete.addEventListener("click", async () => {
     message.textContent = "Error deleting product.";
     message.style.color = "red";
   }
+});
+
+btnArrow.addEventListener("click", () => {
+  window.location.href = "../index.html";
 });

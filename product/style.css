@@ -7,37 +7,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Monsterrat;
+  font-family: "Monsterrat";
 }
 header {
-  padding: 1.5rem 4rem;
-  background-color: #f8f9fa;
-}
-header nav ul {
-  justify-content: right;
   display: flex;
-  list-style: none;
-  gap: 2rem;
+  padding: 1.5rem 2em;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
 }
-header nav ul li {
-  font-size: 1.2rem;
-  font-weight: 500;
-  a {
-    text-decoration: none;
-    color: black;
+.header-nav ul {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.3rem;
+      font-weight: 600;
+      transition: 0.2s ease-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }
+
+.header-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 main h1 {
   text-align: center;
   margin: 1rem 0;
 }
 
 .card {
-  min-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(212, 194, 208);
+  background-color: rgb(255, 255, 255);
   width: 20%;
   margin: 1rem auto;
   padding: 1.5rem 1.2rem;
@@ -79,4 +100,38 @@ main h1 {
 .sellLocationText {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+#btnArrowBack {
+  position: fixed;
+  top: 50%;
+  left: 5rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    background-color: rgb(217, 217, 217);
+
+    .arrow-white {
+      display: none;
+    }
+  }
+
+  .arrow-white {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+  .arrow-black {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+  }
+  &:hover .arrow-black {
+    display: block;
+  }
 }
